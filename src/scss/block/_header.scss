@@ -15,11 +15,6 @@
 	user-select: none;
 }
 
-.logo {
-	position: relative;
-	z-index: 1;
-}
-
 header nav ul {
 	display: flex;
 	align-items: center;
@@ -29,6 +24,7 @@ header nav ul {
 header nav {
 	font-weight: 700;
 	text-transform: uppercase;
+	color: var(--white);
 }
 
 header nav a {
