@@ -28,4 +28,9 @@ export const burgerClose = (): void => {
 	});
 };
 
+export const initBurger = (): void => {
+	burgerOpen();
+	burgerClose();
+}
+
 
