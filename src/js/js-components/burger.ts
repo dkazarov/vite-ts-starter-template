@@ -4,7 +4,7 @@ const nav = document.querySelector('.nav') as HTMLElement | null;
 const body = document.querySelector('body') as HTMLElement | null;
 const navItems = document.querySelectorAll('.nav__item') as NodeListOf<HTMLElement>;
 
-export const burgerOpen = (): void => {
+const burgerOpen = (): void => {
 	if (!burger || !burgerLine || !nav || !body) return;
 
 	burger.addEventListener('click', () => {
@@ -15,7 +15,7 @@ export const burgerOpen = (): void => {
 	});
 };
 
-export const burgerClose = (): void => {
+const burgerClose = (): void => {
 	if (!burger || !burgerLine || !nav || !body) return;
 
 	navItems.forEach(el => {

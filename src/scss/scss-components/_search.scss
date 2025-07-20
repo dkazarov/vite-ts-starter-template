@@ -1,0 +1,63 @@
+.search {
+	display: flex;
+	align-items: center;
+	max-height: 32px;
+}
+
+.input__inner {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-right: 3%;
+}
+
+.search__input {
+	border: none;
+	border-bottom: 2px solid transparent;
+	padding: 6px 0;
+	outline: none;
+	background-color: transparent;
+	font-size: 16px;
+	color: var(--secondary-bg-color);
+	caret-color: var(--secondary-bg-color);
+	max-width: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition:
+		max-width 0.5s ease,
+		opacity 0.5s ease,
+		border-bottom-color 0.5s ease;
+}
+
+.search__input--active {
+	max-width: 200px; // можно 100% при необхідності
+	opacity: 1;
+	border-bottom-color: var(--action-color);
+}
+
+.clear__input {
+	display: none;
+}
+
+.clear__input--active {
+	display: block;
+	position: absolute;
+	right: 1%;
+	color: var(--white);
+	background-color: transparent;
+
+	&:hover {
+		color: var(--accent-color);
+	}
+}
+
+.search__btn {
+	color: var(--white);
+	background-color: transparent;
+	transition: all 0.2s ease-in-out;
+	// padding-top: 6px;
+
+	&:hover {
+		color: var(--action-color);
+	}
+}
