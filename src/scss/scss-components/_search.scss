@@ -9,6 +9,7 @@
 	display: flex;
 	align-items: center;
 	margin-right: 3%;
+	width: 100%;
 }
 
 .search__input {
@@ -23,10 +24,7 @@
 	max-width: 0;
 	overflow: hidden;
 	opacity: 0;
-	transition:
-		max-width 0.5s ease,
-		opacity 0.5s ease,
-		border-bottom-color 0.5s ease;
+	transition: max-width 0.5s ease, opacity 0.5s ease, border-bottom-color 0.5s ease;
 }
 
 .search__input--active {
@@ -59,5 +57,11 @@
 
 	&:hover {
 		color: var(--action-color);
+	}
+}
+
+@media (max-width: 768px) {
+	.logo {
+		display: none;
 	}
 }

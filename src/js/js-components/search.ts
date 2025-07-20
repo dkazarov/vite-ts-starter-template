@@ -45,6 +45,8 @@ const clearInputValue = () => {
 const clearInputInit = () => {
 	clearInput?.addEventListener('click', () => {
 		clearInputValue();
+		clearInput?.classList.remove('clear__input--active');
+    searchInput?.focus();
 	});
 };
 // Ініціалізація всіх функцій пошуку
