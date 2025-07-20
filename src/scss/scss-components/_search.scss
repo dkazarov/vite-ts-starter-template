@@ -1,15 +1,14 @@
 .search {
 	display: flex;
 	align-items: center;
-	max-height: 32px;
 }
 
 .input__inner {
 	position: relative;
 	display: flex;
 	align-items: center;
-	margin-right: 3%;
-	width: 100%;
+	margin-right: 5px;
+	overflow: hidden; /* Важно для анимации */
 }
 
 .search__input {
@@ -21,47 +20,68 @@
 	font-size: 16px;
 	color: var(--secondary-bg-color);
 	caret-color: var(--secondary-bg-color);
-	max-width: 0;
-	overflow: hidden;
+	width: 0; /* Начинаем с нулевой ширины */
 	opacity: 0;
-	transition: max-width 0.5s ease, opacity 0.5s ease, border-bottom-color 0.5s ease;
+	transition: all 0.5s ease;
 }
 
 .search__input--active {
-	max-width: 200px; // можно 100% при необхідності
+	width: 250px; /* Фиксированная ширина или 100% */
 	opacity: 1;
 	border-bottom-color: var(--action-color);
+	padding-right: 20px; /* Защитный отступ для крестика */
 }
 
 .clear__input {
-	display: none;
+	position: absolute;
+	right: 0;
+	color: var(--white);
+	background-color: transparent;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease;
 }
 
 .clear__input--active {
-	display: block;
-	position: absolute;
-	right: 1%;
-	color: var(--white);
-	background-color: transparent;
+	opacity: 1;
+	visibility: visible;
+}
 
-	&:hover {
-		color: var(--accent-color);
-	}
+.clear__input--active:hover {
+	color: var(--accent-color);
 }
 
 .search__btn {
 	color: var(--white);
 	background-color: transparent;
 	transition: all 0.2s ease-in-out;
-	// padding-top: 6px;
+	margin-right: 15px; /* Отступ справа для кнопки поиска */
+}
 
-	&:hover {
-		color: var(--action-color);
-	}
+.search__btn:hover {
+	color: var(--action-color);
 }
 
 @media (max-width: 768px) {
 	.logo {
 		display: none;
+	}
+	.search__input--active {
+		width: 400px; /* Меньшая ширина на мобильных */
+	}
+	.search__btn {
+		margin-right: 8px; /* Меньший отступ на мобильных */
+	}
+}
+
+@media (max-width: 576px) {
+	.search__input--active {
+		width: 250px; /* Меньшая ширина на мобильных */
+	}
+}
+
+@media (max-width: 376px) {
+	.search__input--active {
+		width: 220px; /* Меньшая ширина на мобильных */
 	}
 }
