@@ -1,9 +1,10 @@
 @use 'variables';
 
 .container {
-	max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
-	margin-inline: auto;
-	padding-inline: var(--container-padding-x);
+	max-width: var(--container-width);
+	padding-left: var(--container-padding-x);
+	padding-right: var(--container-padding-x);
+	margin: 0 auto;
 }
 
 // hide nav
@@ -20,4 +21,22 @@ body.no-scroll {
 	padding: 0;
 	border: none;
 	cursor: pointer;
+}
+
+.--hode {
+	display: none !important;
+}
+
+.show-- {
+	display: block !important;
+}
+
+.--opacity-hide {
+	opacity: 0 !important;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.--opacity-show {
+	opacity: 1 !important;
+	transition: opacity 0.2s ease-in-out;
 }

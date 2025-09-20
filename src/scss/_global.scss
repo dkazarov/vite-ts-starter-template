@@ -1,7 +1,9 @@
 @use 'variables' as *;
 
-html {
-	scroll-behavior: smooth;
+html,
+body {
+	height: 100%;
+	margin: 0;
 }
 
 body {
@@ -10,16 +12,15 @@ body {
 	font-weight: 400;
 }
 .wrapper {
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+}
+main {
+	flex: 1;
 }
 .container {
-	max-width: var(--container-width);
-	padding-left: var(--container-padding-x);
-	padding-right: var(--container-padding-x);
-	margin: 0 auto;
-	flex-grow: 1;
+	flex: 1;
 }
 .footer {
 	margin-top: auto;
