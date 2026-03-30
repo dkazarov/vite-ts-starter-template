@@ -1,0 +1,4 @@
+{
+  "plugins": ["prettier-plugin-organize-attributes"],
+  "attributeGroups": ["class", "id", "$DEFAULT"]
+}

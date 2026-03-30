@@ -7,6 +7,40 @@
     <title>vite-ts-starter-template</title>
   </head>
   <body>
+    <div class="header">
+      <div class="header__inner">
+        <img class="logo" src="./src/assets/typescript.svg" alt="logo" />
+
+        <nav>
+          <ul class="nav__list">
+            <div class="header__item">
+              <a class="header__item-link" href="#">Link</a>
+            </div>
+            <div class="header__item">
+              <a class="header__item-link" href="#">Link</a>
+            </div>
+          </ul>
+        </nav>
+
+        <search class="search">
+          <img
+            class="search__icon"
+            width="24px"
+            src="./src/assets/search-icon.svg"
+            height="24px"
+            alt="search"
+          />
+          <input class="search__input" type="text" placeholder="Search" />
+        </search>
+
+        <div class="burger">
+          <button class="burger__btn">
+            <span class="burger__span"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
