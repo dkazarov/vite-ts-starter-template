@@ -1,0 +1,10 @@
+@import "./reset.css";
+@import "./fonts.css";
+@import "./variables.css";
+@import "./global.css";
+@import "./helpers.css";
+
+@import "./blocks/header.css";
+/* @import './blocks/footer.css'; */
+
+/* @import './components/burger.css'; */

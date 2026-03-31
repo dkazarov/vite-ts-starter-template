@@ -1,0 +1,16 @@
+:root {
+  --main-color: #000;
+  --secondary-color: #333;
+
+  --main-font: "Montserrat", sans-serif;
+  --main-font-size: 16px;
+
+  --main-text-color: #000;
+  --secondary-text-color: #f9f9f9;
+
+  --main-bg-color: #272727;
+  --secondary-bg-color: #474747;
+
+  --accent-color: #ff9696;
+  --action-color: #3597ff;
+}
