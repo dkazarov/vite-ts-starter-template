@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  padding: 20px 0;
+  padding: 20px 60px;
 }
 .logo {
   justify-items: flex-start;
@@ -24,16 +24,26 @@
   color: var(--secondary-text-color);
 }
 .search {
+  position: relative;
   display: flex;
   justify-self: flex-end;
 }
 .search__icon {
   position: absolute;
-  z-index: 1;
-  right: 12px;
+  z-index: 100;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  cursor: pointer;
+}
+.search__input-inner {
 }
 .search__input {
-  position: relative;
+  max-width: 0;
+  border: none;
+  padding: 0;
+  margin-right: 40px;
+  transition: 0.5s;
 }
 .burger {
   display: none;
