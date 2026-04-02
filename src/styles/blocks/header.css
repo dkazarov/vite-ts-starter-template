@@ -23,28 +23,7 @@
 .header__item-link {
   color: var(--secondary-text-color);
 }
-.search {
-  position: relative;
-  display: flex;
-  justify-self: flex-end;
-}
-.search__icon {
-  position: absolute;
-  z-index: 100;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0;
-  cursor: pointer;
-}
-.search__input-inner {
-}
-.search__input {
-  max-width: 0;
-  border: none;
-  padding: 0;
-  margin-right: 40px;
-  transition: 0.5s;
-}
+
 .burger {
   display: none;
 }
