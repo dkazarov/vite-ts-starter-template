@@ -25,7 +25,7 @@
   }
 }
 .clear__input--search {
-  z-index: 1;
+  z-index: -1;
   position: absolute;
   width: 24px;
   height: 24px;
@@ -33,10 +33,12 @@
   top: 50%;
   transform: translateY(-50%);
 }
-
-.toggle-show-search-icon {
+.search__input--show {
   width: 220px;
   transition: all 0.2s ease-in;
   padding: 4px;
   border-radius: 8px;
+}
+.clear__input--show {
+  z-index: 1;
 }

@@ -1,4 +1,5 @@
 {
   "plugins": ["prettier-plugin-organize-attributes"],
-  "attributeGroups": ["class", "id", "$DEFAULT"]
+  "attributeGroups": ["class", "id", "$DEFAULT"],
+  "singleQuote": true
 }
