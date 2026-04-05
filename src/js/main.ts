@@ -1,9 +1,6 @@
-const searchInput =
-  (document.querySelector('.search__input') as HTMLInputElement) || null;
+const searchInput = (document.querySelector('.search__input') as HTMLInputElement) || null;
 const searcIcon = document.querySelector('.search__icon') as HTMLImageElement;
-const clearInputBtn = document.querySelector(
-  '.clear__input--search',
-) as HTMLButtonElement;
+const clearInputBtn = document.querySelector('.clear__input--search') as HTMLButtonElement;
 
 searcIcon.addEventListener('click', () => {
   searchInput.classList.toggle('search__input--show');
