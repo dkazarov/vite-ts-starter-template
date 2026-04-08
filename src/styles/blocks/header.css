@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  padding: 10px 60px;
+  padding: 10px 30px;
 }
 .logo {
   justify-items: flex-start;
