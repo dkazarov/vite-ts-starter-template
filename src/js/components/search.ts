@@ -4,6 +4,7 @@ const clearInputBtn = document.querySelector('.clear__input--search') as HTMLBut
 
 export const toggleSearch = () => {
   searcIcon.addEventListener('click', () => {
+    searchInput.value = '';
     searchInput?.classList.toggle('search__input--show');
     clearInputBtn?.classList.toggle('clear__input--show');
   });
