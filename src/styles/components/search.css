@@ -36,7 +36,7 @@
 .search__input--show {
   width: 220px;
   transition: all 0.2s ease-in;
-  padding: 4px;
+   padding: 8px 24px 8px 8px;
   border-radius: 8px;
 }
 .clear__input--show {

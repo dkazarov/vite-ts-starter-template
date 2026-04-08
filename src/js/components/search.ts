@@ -19,7 +19,6 @@ export const clickToAnotherPlace = () => {
         clearInputBtn?.classList.remove('clear__input--show');
       }
     },
-    { once: true },
   );
 };
 
