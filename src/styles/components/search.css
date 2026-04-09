@@ -15,7 +15,7 @@
   width: 0;
   border: none;
   padding: 0;
-  transition: 0.2s;
+  transition: all 0.2s ease-out;
   outline: none;
 
   &::placeholder {
@@ -44,10 +44,17 @@
 
 @media (max-width: 768px) {
   .search {
-     justify-self: flex-start;
+    order: 1;
+    justify-self: flex-start;
   }
-  .header__logo {
-    justify-self: center;
+  .search__form {
+    flex-direction: row-reverse;
   }
-
+  .search__input--show {
+    margin-left: 12px;
+    padding-right: 26px;
+  }
+  .clear__input--show {
+      right: 16px;
+  }
 }

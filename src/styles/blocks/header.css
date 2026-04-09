@@ -5,7 +5,7 @@
   width: 100%;
   margin-bottom: 100px;
   background-color: var(--main-bg-color);
-  margin-bottom: 68px;
+  /* margin-bottom: 68px; */
 }
 .header__inner {
   display: grid;
@@ -30,20 +30,16 @@
 }
 
 @media (max-width: 768px) {
-  .header__inner{
+  .header__inner {
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
     align-items: center;
   }
   .header__nav {
     display: none;
   }
-  .search {
-    order: 1;
-    justify-items: flex-start;
-  }
   .header__logo {
-    order: 2;
-    justify-items: center;
+    display: none;
   }
 }
 
