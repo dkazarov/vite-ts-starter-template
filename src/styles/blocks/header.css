@@ -13,10 +13,11 @@
   align-items: center;
   padding: 10px 30px;
 }
-.logo {
+.header__logo {
   justify-items: flex-start;
+  cursor: pointer;
 }
-.nav__list {
+.header__nav-list {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -26,6 +27,24 @@
 }
 .header__item-link {
   color: var(--secondary-text-color);
+}
+
+@media (max-width: 768px) {
+  .header__inner{
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__nav {
+    display: none;
+  }
+  .search {
+    order: 1;
+    justify-items: flex-start;
+  }
+  .header__logo {
+    order: 2;
+    justify-items: center;
+  }
 }
 
 .burger {
