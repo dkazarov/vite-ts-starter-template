@@ -5,7 +5,6 @@
   width: 100%;
   margin-bottom: 100px;
   background-color: var(--main-bg-color);
-  /* margin-bottom: 68px; */
 }
 .header__inner {
   display: grid;
@@ -31,9 +30,10 @@
 
 @media (max-width: 768px) {
   .header__inner {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 15px;
   }
   .header__nav {
     display: none;
@@ -41,12 +41,4 @@
   .header__logo {
     display: none;
   }
-}
-
-.burger {
-  display: none;
-}
-.burger__btn {
-}
-.burger__span {
 }

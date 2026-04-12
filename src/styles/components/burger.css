@@ -1,0 +1,40 @@
+.burger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 28px;
+    order: 2;
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      background-color: var(--main-color-inverse);
+    }
+
+    &::after {
+      top: 0;
+    }
+
+    &::before {
+      bottom: 0;
+    }
+  }
+  .burger__span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--main-color-inverse);
+  }
+}

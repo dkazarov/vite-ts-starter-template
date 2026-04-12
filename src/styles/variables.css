@@ -1,5 +1,6 @@
 :root {
   --main-color: #000;
+  --main-color-inverse: #fff;
   --secondary-color: #333;
 
   --main-font: "Montserrat", sans-serif;
