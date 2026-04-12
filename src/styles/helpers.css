@@ -4,10 +4,10 @@
   cursor: pointer;
 }
 
-.--hide-hard{
+.--hide{
   display: none;
 }
 
-.--show-hard {
+.--show{
   display: block;
 }

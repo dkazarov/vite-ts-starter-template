@@ -1,3 +1,4 @@
+// @ts-check
 const searchInput = (document.querySelector('.search__input') as HTMLInputElement) || null;
 const searcIcon = document.querySelector('.search__icon') as HTMLImageElement;
 const clearInputBtn = document.querySelector('.clear__input--search') as HTMLButtonElement;

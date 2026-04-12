@@ -17,6 +17,7 @@
       width: 100%;
       height: 2px;
       left: 0;
+      transition: all 0.2s ease-in-out;
       background-color: var(--main-color-inverse);
     }
 
@@ -28,7 +29,7 @@
       bottom: 0;
     }
   }
-  .burger__span {
+  .burger__center-line {
     position: absolute;
     width: 100%;
     height: 2px;
@@ -36,5 +37,18 @@
     top: 50%;
     transform: translateY(-50%);
     background-color: var(--main-color-inverse);
+  }
+  .burger-transform--top::after {
+    top: 50%;
+    transform: rotate(-45deg);
+    transition: all 0.2s ease-in-out;
+  }
+  .burger-transform--top::before {
+    top: 50%;
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in-out;
+  }
+  .burger__center-line--toggle {
+    display: none;
   }
 }
