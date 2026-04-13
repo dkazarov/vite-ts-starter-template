@@ -16,7 +16,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
+  const clickOnOutside = () => {
+    neaderNav.addEventListener('click', (event: Event) => {
+      if ((event.target as HTMLElement).closest('.header__nav')) {
+        neaderNav?.classList.remove('header__nav--show');
+
+        burgerBtn?.classList.remove('burger-transform--top');
+        burgerCenterLine?.classList.remove('--hide');
+      }
+    });
+  };
+
   burger();
+  clickOnOutside();
 
   //Search
   toggleSearch();
