@@ -9,6 +9,7 @@
     width: 28px;
     height: 28px;
     order: 2;
+    z-index: 1;
 
     &::after,
     &::before {
