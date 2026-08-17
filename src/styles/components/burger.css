@@ -19,7 +19,7 @@
       height: 2px;
       left: 0;
       transition: all 0.2s ease-in-out;
-      background-color: var(--main-color-inverse);
+      background-color: var(--color-bg-secondary);
     }
 
     &::after {
@@ -37,7 +37,7 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    background-color: var(--main-color-inverse);
+    background-color: var(--color-bg-secondary);
   }
   .burger-transform--top::after {
     top: 50%;

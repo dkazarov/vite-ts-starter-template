@@ -1,14 +1,14 @@
 body {
-    font-family: var(--main-font);
-    font-size: var(--main-font-size);
-    font-style: normal;
-    min-height: 100vh;
+  font-family: var(--font-family);
+  font-size: var(--font-size-md);
+  font-style: normal;
+  min-height: 100vh;
 
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .main {
-    padding-top: 100px;
+  padding-top: 100px;
 }

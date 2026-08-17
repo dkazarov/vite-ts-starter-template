@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--main-bg-color);
+  background-color: var(--color-bg);
 }
 .header__inner {
   display: grid;
@@ -24,7 +24,7 @@
   text-transform: uppercase;
 }
 .header__item-link {
-  color: var(--secondary-text-color);
+  color: var(--color-text);
 }
 
 @media (max-width: 768px) {
@@ -45,7 +45,7 @@
     right: -100%;
     height: 100%;
     transition: all 0.2s ease-in-out;
-    background-color: var(--main-bg-color);
+    background-color: var(--color-bg);
   }
   .header__nav-list {
     position: absolute;
